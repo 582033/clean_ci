@@ -358,5 +358,8 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 
+if(file_exists(APPPATH. 'config/local.config.php')){
+	include(APPPATH. 'config/local.config.php');	
+}
 /* End of file config.php */
 /* Location: ./application/config/config.php */

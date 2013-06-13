@@ -65,5 +65,8 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 
+if(file_exists(APPPATH. 'config/local.config.php')){
+	include(APPPATH. 'config/local.config.php');	
+}
 /* End of file database.php */
 /* Location: ./application/config/database.php */
