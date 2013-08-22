@@ -234,6 +234,7 @@ class CI_Loader {
 		{
 			foreach ($model as $babe)
 			{
+				
 				$this->model($babe);
 			}
 			return;

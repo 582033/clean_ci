@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('smarty');
+$autoload['libraries'] = array('smarty', 'redis');
 
 
 /*
@@ -109,8 +109,9 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('basemodel');
 
+include(APPPATH . 'config/my_load.php');
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
