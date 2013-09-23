@@ -13,3 +13,5 @@ do
 	fi
 done
 
+vfile='./application/config/constants.php'
+sed -i "s/\(define('FILE_VERSION',\)\s*'.*'/\1 \'`date +%s`\'/g" $vfile
